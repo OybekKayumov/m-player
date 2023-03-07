@@ -42,3 +42,30 @@ function pauseSong() {
 
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
 
+// update DOM
+function loadSong(song) {
+  title.textContent = song.displayName;
+  artist.textContent = song.artist;
+  music.src = `music/${song.name}.mp3`
+  image.src = `img/${song.name}.jpg`
+}
+
+let songIndex = 0;
+
+const nextSong = () => {
+  songIndex++;
+  loadSong(songs[songIndex]);
+  playSong()
+}
+
+const prevSong = () => {
+  songIndex--;
+  loadSong(songs[songIndex]);
+  playSong()
+}
+
+// on load select first song
+loadSong(songs[songIndex]);
+
+prevBtn.addEventListener('click', prevSong)
+nextBtn.addEventListener('click', nextSong)
