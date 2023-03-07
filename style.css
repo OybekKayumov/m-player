@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Sparten, sans-serif;
+  font-family: Spartan, sans-serif;
   font-size: 12px;
 }
 
@@ -21,12 +21,12 @@ body {
   width: 400px;
   background: #e7e7e7;
   border-radius: 20px;
-  box-shadow: 0 15px 30px 5px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .img-container {
-  height: 300px;
   width: 300px;
+  height: 300px;
   position: relative;
   top: -50px;
   left: 50px;
@@ -37,7 +37,7 @@ body {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 5px 30px 5px rgb(0, 0, 0, 0.5);
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -109,7 +109,7 @@ h3 {
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
   .player-container {
-    width: 95vW;
+    width: 95vw;
   }
 
   .img-container {
